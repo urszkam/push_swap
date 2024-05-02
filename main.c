@@ -16,6 +16,11 @@ int	main(int argc, char **argv)
 			}
 		}
 		argv++;
+		if (has_duplicates(argv))
+		{
+			printf("Error\n");
+			return (1);
+		}
 		if (!is_sorted(argv))
 			initialize_sorting(argv, --argc);
 	}
