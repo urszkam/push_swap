@@ -20,7 +20,7 @@ int	*populate_stack(char **argv, int len)
 	return (stack);
 }
 
-void	sort(char **argv, int len)
+void	initialize_sorting(char **argv, int len)
 {
 	int	*stack_a;
 	int	*stack_b;
