@@ -7,7 +7,6 @@ void    swap(t_list **list, char c)
 
     if (list == NULL || first == NULL || second == NULL)
         return ;
-
     first->next = second->next;
     first->prev = second;
     second->next = first;
